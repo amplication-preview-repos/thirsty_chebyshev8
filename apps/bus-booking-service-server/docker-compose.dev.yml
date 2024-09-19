@@ -16,8 +16,26 @@ services:
     ports:
       - 4222:4222
       - 8222:8222
+  redis:
+    container_name: ${REDIS_HOST}
+    image: redis:7
+    ports:
+      - ${REDIS_PORT}:6379
+    volumes:
+      - redis:/data
+  redis_broker:
+    container_name: ${REDIS_BROKER_HOST}
+    image: redis:7
+    ports:
+      - ${REDIS_BROKER_PORT}:6379
+    volumes:
+      - redis_broker:/redis-broker-data
 volumes:
   postgres: ~
+  redis:
+    driver: local
+  redis_broker:
+    driver: local
 networks:
   internal:
     name: internal
