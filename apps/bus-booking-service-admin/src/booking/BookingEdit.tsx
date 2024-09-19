@@ -19,6 +19,12 @@ export const BookingEdit = (props: EditProps): React.ReactElement => {
       <SimpleForm>
         <DateTimeInput label="bookingDate" source="bookingDate" />
         <TextInput label="Customer" source="customer" />
+        <div />
+        <TextInput label="destinationLocation" source="destinationLocation" />
+        <DateTimeInput label="destinationTime" source="destinationTime" />
+        <div />
+        <TextInput label="pickupLocation" source="pickupLocation" />
+        <DateTimeInput label="pickupTime" source="pickupTime" />
         <SelectInput
           source="status"
           label="status"

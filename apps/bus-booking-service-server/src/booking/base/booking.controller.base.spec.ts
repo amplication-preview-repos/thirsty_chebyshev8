@@ -21,7 +21,11 @@ const CREATE_INPUT = {
   bookingDate: new Date(),
   createdAt: new Date(),
   customer: "exampleCustomer",
+  destinationLocation: "exampleDestinationLocation",
+  destinationTime: new Date(),
   id: "exampleId",
+  pickupLocation: "examplePickupLocation",
+  pickupTime: new Date(),
   totalAmount: 42.42,
   updatedAt: new Date(),
 };
@@ -29,7 +33,11 @@ const CREATE_RESULT = {
   bookingDate: new Date(),
   createdAt: new Date(),
   customer: "exampleCustomer",
+  destinationLocation: "exampleDestinationLocation",
+  destinationTime: new Date(),
   id: "exampleId",
+  pickupLocation: "examplePickupLocation",
+  pickupTime: new Date(),
   totalAmount: 42.42,
   updatedAt: new Date(),
 };
@@ -38,7 +46,11 @@ const FIND_MANY_RESULT = [
     bookingDate: new Date(),
     createdAt: new Date(),
     customer: "exampleCustomer",
+    destinationLocation: "exampleDestinationLocation",
+    destinationTime: new Date(),
     id: "exampleId",
+    pickupLocation: "examplePickupLocation",
+    pickupTime: new Date(),
     totalAmount: 42.42,
     updatedAt: new Date(),
   },
@@ -47,7 +59,11 @@ const FIND_ONE_RESULT = {
   bookingDate: new Date(),
   createdAt: new Date(),
   customer: "exampleCustomer",
+  destinationLocation: "exampleDestinationLocation",
+  destinationTime: new Date(),
   id: "exampleId",
+  pickupLocation: "examplePickupLocation",
+  pickupTime: new Date(),
   totalAmount: 42.42,
   updatedAt: new Date(),
 };
@@ -136,6 +152,8 @@ describe("Booking", () => {
         ...CREATE_RESULT,
         bookingDate: CREATE_RESULT.bookingDate.toISOString(),
         createdAt: CREATE_RESULT.createdAt.toISOString(),
+        destinationTime: CREATE_RESULT.destinationTime.toISOString(),
+        pickupTime: CREATE_RESULT.pickupTime.toISOString(),
         updatedAt: CREATE_RESULT.updatedAt.toISOString(),
       });
   });
@@ -149,6 +167,8 @@ describe("Booking", () => {
           ...FIND_MANY_RESULT[0],
           bookingDate: FIND_MANY_RESULT[0].bookingDate.toISOString(),
           createdAt: FIND_MANY_RESULT[0].createdAt.toISOString(),
+          destinationTime: FIND_MANY_RESULT[0].destinationTime.toISOString(),
+          pickupTime: FIND_MANY_RESULT[0].pickupTime.toISOString(),
           updatedAt: FIND_MANY_RESULT[0].updatedAt.toISOString(),
         },
       ]);
@@ -173,6 +193,8 @@ describe("Booking", () => {
         ...FIND_ONE_RESULT,
         bookingDate: FIND_ONE_RESULT.bookingDate.toISOString(),
         createdAt: FIND_ONE_RESULT.createdAt.toISOString(),
+        destinationTime: FIND_ONE_RESULT.destinationTime.toISOString(),
+        pickupTime: FIND_ONE_RESULT.pickupTime.toISOString(),
         updatedAt: FIND_ONE_RESULT.updatedAt.toISOString(),
       });
   });
@@ -187,6 +209,8 @@ describe("Booking", () => {
         ...CREATE_RESULT,
         bookingDate: CREATE_RESULT.bookingDate.toISOString(),
         createdAt: CREATE_RESULT.createdAt.toISOString(),
+        destinationTime: CREATE_RESULT.destinationTime.toISOString(),
+        pickupTime: CREATE_RESULT.pickupTime.toISOString(),
         updatedAt: CREATE_RESULT.updatedAt.toISOString(),
       })
       .then(function () {

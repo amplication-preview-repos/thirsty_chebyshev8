@@ -34,7 +34,19 @@ export const SupplierShow = (props: ShowProps): React.ReactElement => {
             <TextField label="bookingDate" source="bookingDate" />
             <DateField source="createdAt" label="Created At" />
             <TextField label="Customer" source="customer" />
+            <TextField
+              label="destinationCoordinates"
+              source="destinationCoordinates"
+            />
+            <TextField
+              label="destinationLocation"
+              source="destinationLocation"
+            />
+            <TextField label="destinationTime" source="destinationTime" />
             <TextField label="ID" source="id" />
+            <TextField label="pickupCoordinates" source="pickupCoordinates" />
+            <TextField label="pickupLocation" source="pickupLocation" />
+            <TextField label="pickupTime" source="pickupTime" />
             <TextField label="status" source="status" />
             <ReferenceField
               label="Supplier"

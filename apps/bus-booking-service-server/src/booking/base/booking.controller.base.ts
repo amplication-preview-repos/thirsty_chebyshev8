@@ -44,7 +44,13 @@ export class BookingControllerBase {
         bookingDate: true,
         createdAt: true,
         customer: true,
+        destinationCoordinates: true,
+        destinationLocation: true,
+        destinationTime: true,
         id: true,
+        pickupCoordinates: true,
+        pickupLocation: true,
+        pickupTime: true,
         status: true,
 
         supplier: {
@@ -70,7 +76,13 @@ export class BookingControllerBase {
         bookingDate: true,
         createdAt: true,
         customer: true,
+        destinationCoordinates: true,
+        destinationLocation: true,
+        destinationTime: true,
         id: true,
+        pickupCoordinates: true,
+        pickupLocation: true,
+        pickupTime: true,
         status: true,
 
         supplier: {
@@ -97,7 +109,13 @@ export class BookingControllerBase {
         bookingDate: true,
         createdAt: true,
         customer: true,
+        destinationCoordinates: true,
+        destinationLocation: true,
+        destinationTime: true,
         id: true,
+        pickupCoordinates: true,
+        pickupLocation: true,
+        pickupTime: true,
         status: true,
 
         supplier: {
@@ -141,7 +159,13 @@ export class BookingControllerBase {
           bookingDate: true,
           createdAt: true,
           customer: true,
+          destinationCoordinates: true,
+          destinationLocation: true,
+          destinationTime: true,
           id: true,
+          pickupCoordinates: true,
+          pickupLocation: true,
+          pickupTime: true,
           status: true,
 
           supplier: {
@@ -177,7 +201,13 @@ export class BookingControllerBase {
           bookingDate: true,
           createdAt: true,
           customer: true,
+          destinationCoordinates: true,
+          destinationLocation: true,
+          destinationTime: true,
           id: true,
+          pickupCoordinates: true,
+          pickupLocation: true,
+          pickupTime: true,
           status: true,
 
           supplier: {

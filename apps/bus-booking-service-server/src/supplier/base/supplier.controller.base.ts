@@ -170,7 +170,13 @@ export class SupplierControllerBase {
         bookingDate: true,
         createdAt: true,
         customer: true,
+        destinationCoordinates: true,
+        destinationLocation: true,
+        destinationTime: true,
         id: true,
+        pickupCoordinates: true,
+        pickupLocation: true,
+        pickupTime: true,
         status: true,
 
         supplier: {

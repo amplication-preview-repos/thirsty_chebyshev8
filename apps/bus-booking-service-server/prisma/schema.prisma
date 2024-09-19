@@ -20,15 +20,21 @@ model Supplier {
 }
 
 model Booking {
-  bookingDate DateTime?
-  createdAt   DateTime           @default(now())
-  customer    String?
-  id          String             @id @default(cuid())
-  status      EnumBookingStatus?
-  supplier    Supplier?          @relation(fields: [supplierId], references: [id])
-  supplierId  String?
-  totalAmount Float?
-  updatedAt   DateTime           @updatedAt
+  bookingDate            DateTime?
+  createdAt              DateTime           @default(now())
+  customer               String?
+  destinationCoordinates Json?
+  destinationLocation    String?
+  destinationTime        DateTime?
+  id                     String             @id @default(cuid())
+  pickupCoordinates      Json?
+  pickupLocation         String?
+  pickupTime             DateTime?
+  status                 EnumBookingStatus?
+  supplier               Supplier?          @relation(fields: [supplierId], references: [id])
+  supplierId             String?
+  totalAmount            Float?
+  updatedAt              DateTime           @updatedAt
 }
 
 enum EnumBookingStatus {
